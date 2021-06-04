@@ -1,0 +1,323 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body {
+background-image: url("Panglao_Beach.jpg");
+background-repeat: no-repeat;
+position: -webkit-sticky;
+position: sticky;
+/*background-attachment: fixed;*/
+background-position: center;
+background-size: cover;
+margin: 0;
+padding: 0;
+font-family: 'pt_serif_captionregular';
+}
+#header{
+	width:100%;
+	height: 80px;
+	background: #333;
+	box-shadow:0px 2px 6px gray;
+	position: -webkit-sticky;
+	position: sticky;
+	position: relative;
+	top: 0;
+}
+#header h1 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0;
+	padding: 0px 0;
+	text-align: center;
+}
+#header h1 a {
+	color: #99fa99;
+	text-decoration: none;
+}
+#header h1 a span {
+	color: #b6d8cf;
+	display: block;
+	font-family: 'nixie_oneregular';
+	font-size: 15px;
+	text-transform: uppercase;
+}
+#header ul#navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#header ul#navigation li {
+	display: inline;
+	line-height: 30px;
+	position: relative;
+}
+#header ul#navigation li a {
+	color: #b6d8cf;
+	font-size: 18px;
+	padding: 0 46px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header ul#navigation li a:hover,
+#header ul#navigation li.current ul li a:hover {
+	color: #d3a3ff;
+}
+#header ul#navigation li.current a {
+	color: #99fa99;
+}
+#header ul#navigation li ul {
+	display: none;
+	left: 0;
+	list-style: none outside none;
+	margin: 0;
+	padding: 11px 0 0;
+	position: absolute;
+	top: 12px;
+}
+#header ul#navigation li:hover ul {
+	display: block;
+}
+#header ul#navigation li ul li {
+	background: #077054;
+	display: block;
+	height: 46px;
+	line-height: 46px;
+}
+#header ul#navigation li ul li a {
+	padding: 0 20px;
+}
+#header ul#navigation li.current ul li a {
+	color: #b6d8cf;
+}
+#navbar{
+	width:1000px;
+	height: 80px;
+	float:right;
+}
+#navbar>li{
+	width:200px;
+	list-style: none;
+	float:left;
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+}
+li>a{
+	display: block;
+	color: white;
+	line-height: 80px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 20px;
+	text-decoration: none;
+}
+li>a:hover,
+li<a:focus{background-image: url("Panglao_Beach.jpg");}
+#logo{
+	width: 200px;
+	height: 80px;
+	float: left;
+	padding: 3px;
+}
+
+
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DEB887;
+	
+}
+
+li {
+    float:left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align:left;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover */
+
+dropdown:hover .dropbtn:focus {
+    background-color:#ffffcc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color:#ffffcc;
+    min-width: 120px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	position: relative;
+}
+
+.dropdown-content a:hover {background:#333;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#floatright {
+	float: right;
+	margin: 4px;
+}
+#floatleft {
+	float: left;
+	margin: 4px;
+}
+#BodyPanglao {
+	background: #f2f2f2;
+	max-width: 1080px;
+	position: relative;
+	margin: auto;
+	border: 25px transparent black;
+	z-index: 1000px;
+}
+
+.body {
+	background:url(../images/bg-top.png) no-repeat left top;
+	padding:19px 0 0;
+}
+.body .home {
+	background:url(../images/bg-mid.png) repeat-y left top;
+	overflow:hidden;
+}
+.body .home div.featured {
+	background:url(../images/bg-shadow2.png) no-repeat center bottom;
+	height:378px;
+	margin:0;
+	overflow:hidden;
+	padding:0 0 16px;
+	position:relative;
+	z-index:1000
+}
+.body .home div.featured div {
+	background:url(../images/clip-right.png) no-repeat right top;
+	margin:0;
+	position:relative;
+	z-index:1000
+}
+.body .home div.featured div div {
+	background:url(../images/clip-left.png) no-repeat left top;
+	height:330px;
+	margin:0;
+	position:relative;
+	z-index:1000;
+}
+.body .home div.featured img {
+	border:12px solid #f9f9f9;
+	left:38px;
+	position:absolute;
+}
+.body .home div.featured div div p {
+	color:#416277;
+	font-size:12px;
+	left:98px;
+	line-height:24px;
+	margin:0;
+	position:absolute;
+	top:175px;
+	width:415px;
+}
+/*.body .home div.featured div div p a {
+	background:none;
+	color:#a98b52;
+	display:inline;
+	height:auto;
+	margin:0;
+	padding:0;
+	position:static;
+	text-decoration:none;
+	width:auto;
+}
+.body .home div.featured div div a {
+	background:url(../images/buttons.png) no-repeat 0 -71px;
+	display:block;
+	height:61px;
+	left:180px;
+	position:relative;
+	text-indent:-9999px;
+	top:270px;
+	width:186px;
+}
+
+.body .home div.featured div div a:hover {
+	background:url(../images/buttons.png) no-repeat 0 -199px;
+}*/
+
+.body .home div.section {
+	background:url(../Images/border.png) repeat-x left bottom;
+	margin:0 47px;
+	overflow:hidden;
+	padding:0 0 23px;
+}
+.body .home div.section p{
+	color:#848a8f;
+	font-size:12px;
+	line-height:24px;
+	margin:10px 0 0;
+}
+.body .home div.section h4 {
+	color:#bac3cb;
+	font-family: 'pt_serif_captionitalic';
+	font-size:30px;
+	font-weight:400;
+	margin:17px 0 0;
+	text-shadow:0 1px 0 #fdfbfb;
+}
+.body .home div.section h5 {
+	color:#bac3cb;
+	font-family: 'pt_serif_captionitalic';
+	font-size:15px;
+	font-weight:400;
+	margin:17px 0 0;
+	text-shadow:0 1px 0 #fdfbfb;
+}
+/*End for style in Tour&Travel*/
+.body .home div.section div:first-child {
+	background:none;
+	float:left;
+	margin:0 36px 0 0;
+	width:500px;
+}
+.body .home div.section div:first-child h4 {
+	color:#bac3cb;
+	font-family: 'pt_serif_captionitalic';
+	font-size:30px;
+	font-weight:400;
+	margin:17px 0 0;
+	text-shadow:0 1px 0 #fdfbfb;
+}
+.body .home div.section div:first-child p {
+	color:#848a8f;
+	font-size:12px;
+	line-height:24px;
+	margin:10px 0 0;
+}
+
+.body .home div.section div:first-child p a {
+	color:#A98B52;
+	display:inline;
+	text-decoration:none;
+}
